@@ -10,14 +10,16 @@
 * 	Template Style 
 *
 * ======================================================= */
+/** Color Botones **/
 body {
   font-family: "Playfair Display", serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
-  color: #828282;
+  color: #FFFFFF;
   background: #fff;
 }
+
 
 #page {
   position: relative;
@@ -86,7 +88,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .fh5co-nav {
   padding: 18px 0;
-  background: #fff;
+  background: #4295C5;
 }
 @media screen and (max-width: 768px) {
   .fh5co-nav {
@@ -185,6 +187,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: inline-block;
   font-family: "Montserrat", Arial, sans-serif;
 }
+/** Letras Banner**/
 .fh5co-nav ul li a {
   font-size: 13px;
   padding: 30px 10px;
@@ -194,6 +197,7 @@ h1, h2, h3, h4, h5, h6, figure {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
+/** Termina Letras Banner**/
 .fh5co-nav ul li a:hover, .fh5co-nav ul li a:focus, .fh5co-nav ul li a:active {
   color: black;
 }
@@ -313,6 +317,7 @@ h1, h2, h3, h4, h5, h6, figure {
   bottom: 40px;
   z-index: 1000;
 }
+/** Pequeños botones Transicion del inicio**/
 #fh5co-hero .flexslider .flex-control-nav li a {
   background: rgba(255, 255, 255, 0.2);
   box-shadow: none;
@@ -337,6 +342,8 @@ h1, h2, h3, h4, h5, h6, figure {
   vertical-align: middle;
   min-height: 700px;
 }
+
+/** Titulo de los mini cuadros del preview de objetos **/
 #fh5co-hero .flexslider .slider-text > .slider-text-inner h2 {
   font-size: 24px;
   font-weight: 400;
@@ -349,8 +356,9 @@ h1, h2, h3, h4, h5, h6, figure {
     font-size: 40px;
   }
 }
+/** COLOR DE LOS CUADROS QUE SE ENCUENTRA EN EL PREVIEW*/
 #fh5co-hero .flexslider .slider-text > .slider-text-inner .desc {
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(33, 103, 135, 0.81);
   padding: 40px;
 }
 #fh5co-hero .flexslider .slider-text > .slider-text-inner .desc .price {
