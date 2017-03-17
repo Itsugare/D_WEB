@@ -10,7 +10,7 @@
 * 	Template Style 
 *
 * ======================================================= */
-/** Color Botones **/
+/** Color de las letras en general **/
 body {
   font-family: "Playfair Display", serif;
   font-weight: 400;
@@ -716,9 +716,10 @@ h1, h2, h3, h4, h5, h6, figure {
   margin-left: 3px;
 }
 
+/** Color de la parte de las ventajas */
 .fh5co-bg-section {
-  background: rgba(0, 0, 0, 0.05);
-}
+  background: rgba(46, 117, 127, 0.69) ;
+} 
 
 #fh5co-services,
 #fh5co-started,
@@ -759,10 +760,12 @@ h1, h2, h3, h4, h5, h6, figure {
 .feature-center .desc {
   padding-left: 180px;
 }
+
+/** Fondo Color de las ventajas o Servicios**/
 .feature-center .icon {
   width: 90px;
   height: 90px;
-  background: #d1c286;
+  background: #000;
   display: table;
   text-align: center;
   margin: 0 auto 30px auto;
