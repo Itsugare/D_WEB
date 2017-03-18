@@ -10,14 +10,14 @@
 * 	Template Style 
 *
 * ======================================================= */
-/** Color de las letras en general **/
+/** Color de las letras en general y aqui se cambia el color de fondo de productos**/
 body {
   font-family: "Playfair Display", serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
   color: #FFFFFF;
-  background: #fff;
+  background: #4295C5;
 }
 
 
@@ -716,7 +716,7 @@ h1, h2, h3, h4, h5, h6, figure {
   margin-left: 3px;
 }
 
-/** Color de la parte de las ventajas */
+/** Color de fondo de la parte de las ventajas */
 .fh5co-bg-section {
   background: rgba(46, 117, 127, 0.69) ;
 } 
@@ -761,7 +761,7 @@ h1, h2, h3, h4, h5, h6, figure {
   padding-left: 180px;
 }
 
-/** Fondo Color de las ventajas o Servicios**/
+/** Fondo Color de los iconos de las ventajas o Servicios**/
 .feature-center .icon {
   width: 90px;
   height: 90px;
@@ -806,6 +806,7 @@ h1, h2, h3, h4, h5, h6, figure {
   -o-transition: 0.3s;
   transition: 0.3s;
 }
+/** Color del circulo sale**/
 .product .product-grid .sale {
   position: absolute;
   top: 10px;
@@ -819,11 +820,13 @@ h1, h2, h3, h4, h5, h6, figure {
   -ms-border-radius: 50%;
   border-radius: 50%;
 }
+
 .product .product-grid .inner {
   display: table;
   height: 350px;
   width: 100%;
   opacity: 0;
+  /** Background de los items productos **/
   background: rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -868,6 +871,7 @@ h1, h2, h3, h4, h5, h6, figure {
   -moz-box-shadow: 0px 10px 24px -7px rgba(0, 0, 0, 0.35);
   -ms-box-shadow: 0px 10px 24px -7px rgba(0, 0, 0, 0.35);
   -o-box-shadow: 0px 10px 24px -7px rgba(0, 0, 0, 0.35);
+  /** Sombra de los productos **/ 
   box-shadow: 0px 10px 24px -7px rgba(0, 0, 0, 0.35);
 }
 .product:hover .inner, .product:focus .inner {
@@ -1025,6 +1029,8 @@ h1, h2, h3, h4, h5, h6, figure {
   letter-spacing: 1px;
   color: #000;
 }
+
+/** Texto de la parte de productos **/
 .fh5co-heading p {
   font-size: 18px;
   line-height: 1.5;
