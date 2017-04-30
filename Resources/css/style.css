@@ -64,6 +64,11 @@ p {
   margin-bottom: 20px;
 }
 
+#Texto {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
 h1, h2, h3, h4, h5, h6, figure {
   color: #000;
   font-family: "Montserrat", Arial, sans-serif;
@@ -105,7 +110,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .fh5co-nav a {
   padding: 5px 10px;
-  color: #000;
+  color: #F6F6F6;
 }
 @media screen and (max-width: 768px) {
   .fh5co-nav .menu-1, .fh5co-nav .menu-2 {
@@ -192,7 +197,7 @@ h1, h2, h3, h4, h5, h6, figure {
   font-size: 13px;
   padding: 30px 10px;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(247, 247, 247, 1);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -1533,18 +1538,18 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .btn-primary {
-  background: #d1c286;
-  color: #fff;
-  border: 2px solid #d1c286;
+  background: #000;
+  color: #000;
+  border: 2px solid #000;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background: #d8cb98 !important;
-  border-color: #d8cb98 !important;
+  background: #414040 !important;
+  border-color: #fff !important;
 }
 .btn-primary.btn-outline {
-  background: transparent;
-  color: #d1c286;
-  border: 2px solid #d1c286;
+  background: #000;
+  color: #fff;
+  border: 2px solid #fff;
 }
 .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
   background: #d1c286;
