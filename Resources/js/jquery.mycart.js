@@ -7,10 +7,10 @@
 (function ($) {
 
   "use strict";
-
+recibirCarrito();
   var OptionManager = (function () {
     var objToReturn = {};
-
+      
     var defaultOptions = {
       currencySymbol: '$',
       classCartIcon: 'my-cart-icon',
@@ -63,6 +63,8 @@
     var setAllProducts = function(products){
       localStorage.products = JSON.stringify(products);
     }
+    
+
     var addProduct = function(id, name, summary, price, quantity, image) {
       var products = getAllProducts();
       products.push({
@@ -74,6 +76,7 @@
         image: image
       });
       setAllProducts(products);
+        guardarCarrito(products);
     }
 
     /*
@@ -87,6 +90,7 @@
         return [];
       }
     }
+   
     var updatePoduct = function(id, quantity) {
       var productIndex = getIndexOfProduct(id);
       if(productIndex < 0){
@@ -95,6 +99,7 @@
       var products = getAllProducts();
       products[productIndex].quantity = typeof quantity === "undefined" ? products[productIndex].quantity * 1 + 1 : quantity;
       setAllProducts(products);
+        guardarCarrito(products);
       return true;
     }
     var setProduct = function(id, name, summary, price, quantity, image) {
@@ -125,7 +130,8 @@
       }
     }
     var clearProduct = function(){
-      setAllProducts([]);
+      //setAllProducts([]);
+        //guardarCarrito([]);
     }
     var removeProduct = function(id){
       var products = getAllProducts();
@@ -133,6 +139,7 @@
         return value.id != id;
       });
       setAllProducts(products);
+        guardarCarrito(products);
     }
     var getTotalQuantity = function(){
       var total = 0;
@@ -160,8 +167,25 @@
     objToReturn.getTotalPrice = getTotalPrice;
     return objToReturn;
   }());
-
-
+    
+    function limpiarCarrito(){
+        guardarCarrito([]);
+        localStorage.products = JSON.stringify([]);
+        console.log("LIMPIA");
+        location.reload();
+    }
+    
+    function guardarCarrito(products){
+        localStorage.setItem("shopCart", JSON.stringify(products));
+        console.log("hola");
+    }
+        
+    //asddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+function recibirCarrito(){
+    console.log("RECIBIDO");    
+    guardarCarrito(JSON.parse(localStorage.getItem("shopCart")));
+    }
+    
   var loadMyCartEvent = function(userOptions){
 
     var options = OptionManager.getOptions(userOptions);
@@ -196,14 +220,14 @@
         '<div class="modal-content">' +
         '<div class="modal-header">' +
         '<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>' +
-        '<h4 class="modal-title" id="myModalLabel"><span class="glyphicon glyphicon-shopping-cart"></span> My Cart</h4>' +
+        '<h4 class="modal-title" id="myModalLabel"><span class="glyphicon glyphicon-shopping-cart"></span> Mi Carrito</h4>' +
         '</div>' +
         '<div class="modal-body">' +
         '<table class="table table-hover table-responsive" id="' + idCartTable + '"></table>' +
         '</div>' +
         '<div class="modal-footer">' +
-        '<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>' +
-        '<button type="button" style="Color:white" class="btn btn-primary ' + classCheckoutCart + '">Checkout</button>' +
+        '<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>' +
+        '<button type="button" style="color:white" class="btn btn-primary compra ' + classCheckoutCart + '">Comprar carrito</button>' +
         '</div>' +
         '</div>' +
         '</div>' +
@@ -239,7 +263,7 @@
         '<td style="color:black"><strong id="' + idGrandTotal + '"></strong></td>' +
         '<td></td>' +
         '</tr>'
-        : '<div class="alert alert-danger" role="alert" id="' + idEmptyCartMessage + '">Your cart is empty</div>'
+        : '<div class="alert alert-danger" role="alert" id="' + idEmptyCartMessage + '">El carrito de compras esta vacio</div>'
       );
 
       
@@ -320,6 +344,8 @@
       ProductManager.clearProduct();
       $cartBadge.text(ProductManager.getTotalQuantity());
       $("#" + idCartModal).modal("hide");
+        limpiarCarrito();
+        console.log("que guaba");
     });
 
   }
