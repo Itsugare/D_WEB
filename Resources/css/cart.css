@@ -1,0 +1,23 @@
+<!-- agregacion de compra de carrito-->
+    
+  .badge-notify{
+    background:red;
+    position:relative;
+    top: -20px;
+    right: 10px;
+  }
+  .my-cart-icon-affix {
+    position: fixed;
+    z-index: 999;
+  }
+    .my-cart-btn:hover {
+        transition-duration: 0.4s;
+        background-color: azure;
+        color: white;
+}
+  .my-cart-btn{
+      background-color: crimson;
+      color: white;
+  }
+  
+<!-- termina de compra de carrito-->
