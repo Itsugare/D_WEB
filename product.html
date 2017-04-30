@@ -5,6 +5,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Productos</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- agregacion de compra de carrito-->
+    <link rel="stylesheet" href="Resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Resources/css/cart.css">
+
+        <!-- termina -->
 
   	<!-- Facebook and Twitter integration -->
 	<meta property="og:title" content=""/>
@@ -54,13 +59,13 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-3 col-xs-2">
-					<div id="fh5co-logo"><a href="index.html">Grupo2</a></div>
+					<div id="fh5co-logo"><a href="index.html">Grupo 2</a></div>
 				</div>
 				<div class="col-md-6 col-xs-6 text-center menu-1">
 					<ul>
 						<li class="has-dropdown">
 							<a href="product.html">Productos</a>
-													<ul class="dropdown">
+							<ul class="dropdown">
 								<li><a href="hat.html">Gorras</a></li>
 								<li><a href="rods.html">Cañas de pesca</a></li>
 								<li><a href="reel.html">Carretes</a></li>
@@ -72,14 +77,19 @@
 								<li><a href="gps.html">GPS</a></li>
 							</ul>
 						</li>
-						
-						<li><a href="about.html">Nosotros</a></li>
+						<li><a href="about.html">Marcas</a></li>
+						<li class="has-dropdown">
+							<a href="about.html">Nosotros</a>
+							<ul class="dropdown">
+								<li><a href="#">Feedback</a></li>
+							</ul>
+						</li>
 						<li><a href="contact.html">Contactenos</a></li>
 					</ul>
 				</div>
 				<div class="col-md-3 col-xs-4 text-right hidden-xs menu-2">
 					<ul>
-						<li class="shopping-cart"><a href="#" class="cart"><span><small>0</small><i class="icon-shopping-cart"></i></span></a></li>
+						<label class="glyphicon glyphicon-shopping-cart my-cart-icon"><label class="badge badge-notify my-cart-badge"></label></label>
 					</ul>
 				</div>
 			</div>
@@ -91,163 +101,89 @@
 
 	<div id="fh5co-product">
 		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<span>Catalogo de Productos</span>
-					<h2>Productos de alta tecnlogia al mejor precio</h2>
-					<p id="Texto"></p>
-				</div>
-			</div>
 			<div class="row">
-				<div class="col-md-4 text-center animate-box">
-					<div class="product">
-						<div class="product-grid" style="background-image:url(Resources/images/menu_cap.jpg);">
-							<div class="inner">
-								<p>
-									<a href="single.html" class="icon"><i class="icon-shopping-cart"></i></a>
-									<a href="hat.html" class="icon"><i class="icon-eye"></i></a>
-								</p>
-							</div>
-						</div>
-						<div class="desc">
-							<h3><a href="hat.html">Gorra clásica de pesca</a></h3>
-							<span class="price">$50</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 text-center animate-box">
-					<div class="product">
-						<div class="product-grid" style="background-image:url(Resources/images/menu_rod.jpg);">
-							<div class="inner">
-								<p>
-									<a href="single.html" class="icon"><i class="icon-shopping-cart"></i></a>
-									<a href="rods.html" class="icon"><i class="icon-eye"></i></a>
-								</p>
-							</div>
-						</div>
-						<div class="desc">
-							<h3><a href="rods.html">Cañas de pesca</a></h3>
-							<span class="price">$450</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 text-center animate-box">
-					<div class="product">
-						<div class="product-grid" style="background-image:url(Resources/images/menu_reel.jpg);">
-							<div class="inner">
-								<p>
-									<a href="single.html" class="icon"><i class="icon-shopping-cart"></i></a>
-									<a href="reel.html" class="icon"><i class="icon-eye"></i></a>
-								</p>
-							</div>
-						</div>
-						<div class="desc">
-							<h3><a href="reel.html">Carrete</a></h3>
-							<span class="price">$550</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4 text-center animate-box">
-					<div class="product">
-						<div class="product-grid" style="background-image:url(Resources/images/menu_hook.png);">
-							<div class="inner">
-								<p>
-									<a href="single.html" class="icon"><i class="icon-shopping-cart"></i></a>
-									<a href="hooks.html" class="icon"><i class="icon-eye"></i></a>
-								</p>
-							</div>
-						</div>
-						<div class="desc">
-							<h3><a href="hooks.html">Gancho de pesca</a></h3>
-							<span class="price">$9</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 text-center animate-box">
-					<div class="product">
-						<div class="product-grid" style="background-image:url(Resources/images/menu_vest.jpg);">
-							<div class="inner">
-								<p>
-									<a href="single.html" class="icon"><i class="icon-shopping-cart"></i></a>
-									<a href="vest.html" class="icon"><i class="icon-eye"></i></a>
-								</p>
-							</div>
-						</div>
-						<div class="desc">
-							<h3><a href="vest.html">Chaleco de pesca</a></h3>
-							<span class="price">$65</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 text-center animate-box">
-					<div class="product">
-						<div class="product-grid" style="background-image:url(Resources/images/menu_tacklebag.jpg);">
-							<div class="inner">
-								<p>
-									<a href="single.html" class="icon"><i class="icon-shopping-cart"></i></a>
-									<a href="backpack.html" class="icon"><i class="icon-eye"></i></a>
-								</p>
-							</div>
-						</div>
-						<div class="desc">
-							<h3><a href="backpack.html">Bolsa de equipaje de pesca</a></h3>
-							<span class="price">$69.99</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4 text-center animate-box">
-					<div class="product">
-						<div class="product-grid" style="background-image:url(Resources/images/menu_bait.jpg);">
-							<div class="inner">
-								<p>
-									<a href="single.html" class="icon"><i class="icon-shopping-cart"></i></a>
-									<a href="bait.html" class="icon"><i class="icon-eye"></i></a>
-								</p>
-							</div>
-						</div>
-						<div class="desc">
-							<h3><a href="bait.html">Señuelos</a></h3>
-							<span class="price">$1.50</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 text-center animate-box">
-					<div class="product">
-						<div class="product-grid" style="background-image:url(Resources/images/menu_weight.jpg);">
-							<div class="inner">
-								<p>
-									<a href="single.html" class="icon"><i class="icon-shopping-cart"></i></a>
-									<a href="weight.html" class="icon"><i class="icon-eye"></i></a>
-								</p>
-							</div>
-						</div>
-						<div class="desc">
-							<h3><a href="weight.html">Plomadas</a></h3>
-							<span class="price">$2.26</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 text-center animate-box">
-					<div class="product">
-						<div class="product-grid" style="background-image:url(Resources/images/menu_gps.jpg);">
-							<div class="inner">
-								<p>
-									<a href="single.html" class="icon"><i class="icon-shopping-cart"></i></a>
-									<a href="gps.html" class="icon"><i class="icon-eye"></i></a>
-								</p>
-							</div>
-						</div>
-						<div class="desc">
-							<h3><a href="gps.html">Navegador GPS buscador de peces</a></h3>
-							<span class="price">$2000</span>
-						</div>
-					</div>
-				</div>
-			</div>
+    <div class="col-xs-4 col-md-4 text-center">
+      <img src="Resources/images/hat01.jpg" width="150px" height="150px">
+      <br>
+      Gorra Clasica - <strong>$50</strong>
+      <br>
+      <button  class="btn my-cart-btn" data-id="1" data-name="Gorra Clasica" data-summary="summary 1" data-price="50" data-quantity="1" data-image="Resources/images/hat01.jpg">Add to Cart</button>
+      <a href="#" class="btn btn-info">Details</a>
+    </div>
+
+    <div class="col-xs-4 col-md-4 text-center">
+      <img src="Resources/images/bag01.jpg" width="150px" height="150px">
+      <br>
+      Bolsa de equipaje de pesca - <strong>$50</strong>
+      <br>
+      <button class="btn  my-cart-btn" data-id="2" data-name="Bolsa de equipaje de pesca" data-summary="summary 1" data-price="50" data-quantity="1" data-image="Resources/images/bag01.jpg">Add to Cart</button>
+      <a href="#" class="btn btn-info">Details</a>
+    </div>
+
+    <div class="col-xs-4 col-md-4 text-center">
+      <img src="Resources/images/carrete.jpg" width="150px" height="150px">
+      <br>
+      Carrete - <strong>$500</strong>
+      <br>
+      <button class="btn  my-cart-btn" data-id="3" data-name="Carrete" data-summary="summary 1" data-price="500" data-quantity="1" data-image="Resources/images/carrete.jpg">Add to Cart</button>
+      <a href="#" class="btn btn-info">Details</a>
+    </div>
+
+    <div class="col-xs-4 col-md-4 text-center">
+      <img src="Resources/images/gps01.jpg" width="150px" height="150px">
+      <br>
+      GPS - <strong>$2000</strong>
+      <br>
+      <button class="btn my-cart-btn" style="color;white" data-id="4" data-name="GPS" data-summary="summary 1" data-price="2000" data-quantity="1" data-image="Resources/images/gps01.jpg">Add to Cart</button>
+      <a href="#" class="btn btn-info">Details</a>
+    </div>
+
+    <div class="col-xs-4 col-md-4 text-center">
+      <img src="Resources/images/fishing_vest.jpg" width="150px" height="150px">
+      <br>
+      Chaleco de pesca - <strong>$65</strong>
+      <br>
+      <button class="btn  my-cart-btn" data-id="5" data-name="Chaleco de pesca" data-summary="summary 1" data-price="65" data-quantity="1" data-image="Resources/images/fishing_vest.jpg">Add to Cart</button>
+      <a href="#" class="btn btn-info">Details</a>
+    </div>
+                
+    <div class="col-xs-4 col-md-4 text-center">
+      <img src="Resources/images/person3.jpg" width="150px" height="150px">
+      <br>
+      Caña de pesca - <strong>$89.99</strong>
+      <br>
+      <button class="btn  my-cart-btn" data-id="6" data-name="Caña de pesca" data-summary="summary 1" data-price="450" data-quantity="1" data-image="Resources/images/person3.jpg">Add to Cart</button>
+      <a href="#" class="btn btn-info">Details</a>
+    </div>
+                
+    <div class="col-xs-4 col-md-4 text-center">
+      <img src="Resources/images/hook01.jpg" width="150px" height="150px">
+      <br>
+      Gancho de pesca - <strong>$9</strong>
+      <br>
+      <button class="btn my-cart-btn" data-id="7" data-name="Gancho de pesca" data-summary="summary 1" data-price="9" data-quantity="1" data-image="Resources/images/hook01.jpg">Add to Cart</button>
+      <a href="#" class="btn btn-info">Details</a>
+    </div>
+                
+    <div class="col-xs-4 col-md-4 text-center">
+      <img src="Resources/images/bait01.jpg" width="150px" height="150px">
+      <br>
+      Señuelos por unidad - <strong>$1</strong>
+      <br>
+      <button class="btn my-cart-btn" data-id="8" data-name="Señuelos por unidad" data-summary="summary 1" data-price="1" data-quantity="1" data-image="Resources/images/bait01.jpg">Add to Cart</button>
+      <a href="#" class="btn btn-info">Details</a>
+    </div>
+                
+    <div class="col-xs-4 col-md-4 text-center">
+      <img src="Resources/images/weight01.jpg" width="150px" height="150px">
+      <br>
+      Paquete plomadas - <strong>$2</strong>
+      <br>
+      <button class="btn my-cart-btn" data-id="9" data-name="Paquete plomadas" data-summary="summary 1" data-price="2" data-quantity="1" data-image="Resources/images/weight01.jpg">Add to Cart</button>
+      <a href="#" class="btn btn-info">Details</a>
+    </div>
+                
+  </div>
 		</div>
 	</div>
 
@@ -275,7 +211,11 @@
 		</div>
 	</footer>
 	</div>
-
+<!-- scripts carrito-->
+  <script src="Resources/js/jquery-2.2.3.min.js"></script>
+  <script type='text/javascript' src="Resources/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="Resources/js/carrito.js"></script>
+            <!-- terminan scripts carrito-->
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
@@ -296,6 +236,8 @@
 	<script src="Resources/js/jquery.flexslider-min.js"></script>
 	<!-- Main -->
 	<script src="Resources/js/main.js"></script>
-
+<!-- ultimo script del carrito que tiene que ser cargado al final-->
+    <script type='text/javascript' src="Resources/js/jquery.mycart.js"></script>
+    <!-- termina script-->
 	</body>
 </html>

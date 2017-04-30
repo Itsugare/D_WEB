@@ -5,7 +5,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>GPS</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- agregacion de compra de carrito-->
+    <link rel="stylesheet" href="Resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Resources/css/cart.css">
 
+        <!-- termina -->
   	<!-- Facebook and Twitter integration -->
 	<meta property="og:title" content=""/>
 	<meta property="og:image" content=""/>
@@ -54,13 +58,13 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-3 col-xs-2">
-					<div id="fh5co-logo"><a href="index.html">Grupo2</a></div>
+					<div id="fh5co-logo"><a href="index.html">Grupo 2</a></div>
 				</div>
 				<div class="col-md-6 col-xs-6 text-center menu-1">
-				<ul>
+					<ul>
 						<li class="has-dropdown">
 							<a href="product.html">Productos</a>
-													<ul class="dropdown">
+							<ul class="dropdown">
 								<li><a href="hat.html">Gorras</a></li>
 								<li><a href="rods.html">Cañas de pesca</a></li>
 								<li><a href="reel.html">Carretes</a></li>
@@ -72,22 +76,19 @@
 								<li><a href="gps.html">GPS</a></li>
 							</ul>
 						</li>
-						
-						<li><a href="about.html">Nosotros</a></li>
+						<li><a href="about.html">Marcas</a></li>
+						<li class="has-dropdown">
+							<a href="about.html">Nosotros</a>
+							<ul class="dropdown">
+								<li><a href="#">Feedback</a></li>
+							</ul>
+						</li>
 						<li><a href="contact.html">Contactenos</a></li>
 					</ul>
 				</div>
 				<div class="col-md-3 col-xs-4 text-right hidden-xs menu-2">
 					<ul>
-						<li class="search">
-							<div class="input-group">
-						      <input type="text" placeholder="Search..">
-						      <span class="input-group-btn">
-						        <button class="btn btn-primary" type="button"><i class="icon-search"></i></button>
-						      </span>
-						    </div>
-						</li>
-						<li class="shopping-cart"><a href="#" class="cart"><span><small>0</small><i class="icon-shopping-cart"></i></span></a></li>
+						<label class="glyphicon glyphicon-shopping-cart my-cart-icon"><label class="badge badge-notify my-cart-badge"></label></label>
 					</ul>
 				</div>
 			</div>
@@ -119,9 +120,9 @@
 					</div>
 					<div class="row animate-box">
 						<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-							<h2>Gorra clásica de pesca</h2>
+							<h2>GPS</h2>
 							<p>
-								<a href="#" class="btn btn-primary btn-outline btn-lg">Agregar al carrito</a>
+								<button class="btn btn-primary btn-outline btn-lg my-cart-btn" style="color;white" data-id="4" data-name="GPS" data-summary="summary 1" data-price="2000" data-quantity="1" data-image="Resources/images/gps01.jpg">Agregar al carrito</button>
 							</p>
 						</div>
 					</div>
@@ -144,8 +145,6 @@
 									<span class="price">Precio: $2000</span>
 									<h2>GPS</h2>
 									<p>El dispositivo ofrece una amplia gama de funciones y características de un valor excepcional. Tiene una interfaz de pantalla táctil intuitiva, Bluetooth® y compatibilidad inalámbrica, tecnología de navegación Lowrance demostrada y sonar de alto rendimiento</p>
-
-									<div class="row">
 										<div class="col-md-6">
 											<h2 class="uppercase">Fácil de usar</h2>
 											<p>Intuitivo</p>
@@ -155,7 +154,6 @@
 											<p>Pantalla de 800x400</p>
 										</div>
 									</div>
-
 								</div>
 							</div>
 
@@ -192,11 +190,8 @@
 											<blockquote>
 												<p>La bateria se descarga rapido</p>
 											</blockquote>
-											<h3>&mdash; Alex Elizondo</h3>
+											<h3>&mdash; Oscar Gomez</h3>
 											<span class="rate">
-												<i class="icon-star2"></i>
-												<i class="icon-star2"></i>
-												<i class="icon-star2"></i>
 												<i class="icon-star2"></i>
 												<i class="icon-star2"></i>
 											</span>
@@ -234,7 +229,11 @@
 		</div>
 	</footer>
 	</div>
-
+<!-- scripts carrito-->
+  <script src="Resources/js/jquery-2.2.3.min.js"></script>
+  <script type='text/javascript' src="Resources/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="Resources/js/carrito.js"></script>
+            <!-- terminan scripts carrito-->
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
@@ -255,6 +254,8 @@
 	<script src="Resources/js/jquery.flexslider-min.js"></script>
 	<!-- Main -->
 	<script src="Resources/js/main.js"></script>
-
+<!-- ultimo script del carrito que tiene que ser cargado al final-->
+    <script type='text/javascript' src="Resources/js/jquery.mycart.js"></script>
+    <!-- termina script-->
 	</body>
 </html>

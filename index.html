@@ -8,18 +8,7 @@
 
   <!-- agregacion de compra de carrito-->
     <link rel="stylesheet" href="Resources/css/bootstrap.min.css">
-  <style>
-  .badge-notify{
-    background:red;
-    position:relative;
-    top: -20px;
-    right: 10px;
-  }
-  .my-cart-icon-affix {
-    position: fixed;
-    z-index: 999;
-  }
-  </style>
+    <link rel="stylesheet" href="Resources/css/cart.css">
 
         <!-- termina -->
   	<!-- Facebook and Twitter integration -->
@@ -72,7 +61,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-3 col-xs-2">
-					<div id="fh5co-logo"><a href="index.html">Grupo2</a></div>
+					<div id="fh5co-logo"><a href="index.html">Grupo 2</a></div>
 				</div>
 				<div class="col-md-6 col-xs-6 text-center menu-1">
 					<ul>
@@ -90,18 +79,17 @@
 								<li><a href="gps.html">GPS</a></li>
 							</ul>
 						</li>
-						<li><a href="about.html">Nosotros</a></li>
+						<li><a href="about.html">Marcas</a></li>
+						<li class="has-dropdown">
+							<a href="about.html">Nosotros</a>
+						</li>
 						<li><a href="contact.html">Contactenos</a></li>
 					</ul>
 				</div>
 				<div class="col-md-3 col-xs-4 text-right hidden-xs menu-2">
 					<ul>
-						
-						<span class="glyphicon glyphicon-shopping-cart my-cart-icon">
-						<span class="badge badge-notify my-cart-badge">
-							
-						</span>
-						</span>
+						<label class="glyphicon glyphicon-shopping-cart my-cart-icon"><label class="badge badge-notify my-cart-badge"></label></label>
+
 					</ul>
 				</div>
 			</div>
@@ -120,24 +108,24 @@
 		   				<div class="slider-text-inner">
 		   					<div class="desc">
 		   						<span class="price">$300</span>
-		   						<h2>Mochila </h2>
-		   						<p>La mochila  viene con la cremallera 100% impermeable, antideslizante duro y totalmente a prueba de humedad y fácil de limpiar. Tiene compartimentos adecuados en las medidas ideales para el almacenamiento y correas desmontables. Es compatible con una amplia gama de modelos de cajas de plástico para su almacenamiento.</p>
-			   					<p><a href="backpack.html" class="btn btn-primary btn-outline btn-lg">Más Info</a></p>
+		   						<h2>Mochila Sumax</h2>
+		   						<p>La mochila Sumax viene con la cremallera 100% impermeable, antideslizante duro y totalmente a prueba de humedad y fácil de limpiar. Tiene compartimentos adecuados en las medidas ideales para el almacenamiento y correas desmontables. Es compatible con una amplia gama de modelos de cajas de plástico para su almacenamiento.</p>
+			   					<p><a href="backpack.html" class="btn btn-primary btn-outline btn-lg">Purchase Now</a></p>
 		   					</div>
 		   				</div>
 		   			</div>
 		   		</div>
 		   	</li>
 		   		<!-- D(ESTE ES EL NUMERO 2)  -->
-		   	<li style="background-image: url(Resources/images/previa2.jpg);">
+		   	<li style="background-image: url(Resources/images/person3.jpg);">
 		   		<div class="container">
 		   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 js-fullheight slider-text">
 		   				<div class="slider-text-inner">
 		   					<div class="desc">
 		   						<span class="price">$530</span>
-		   						<h2>Chaleco</h2>
-		   						<p>Esta maravilla de 24 bolsillos cuenta con: dos bolsillos de pecho grandes / dos medianos, seis bolsillos de cintura, dos bolsillos de títere, ocho bolsillos internos, un bolsillo trasero dividido, un bolsillo trasero con grados y un bolsillo seco para sacudir</p>
-			   					<p><a href="vest.html" class="btn btn-primary btn-outline btn-lg">Más Info</a></p>
+		   						<h2>Canas de pesca</h2>
+		   						<p>Quos quia provident consequuntur culpa facere ratione maxime commodi voluptates id repellat velit eaque aspernatur expedita. Possimus itaque adipisci rem dolorem nesciunt perferendis quae amet deserunt eum labore quidem minima.</p>
+			   					<p><a href="rods.html" class="btn btn-primary btn-outline btn-lg">Purchase Now</a></p>
 		   					</div>
 		   				</div>
 		   			</div>
@@ -150,11 +138,11 @@
 		   				<div class="slider-text-inner">
 		   					<div class="desc">
 		   						<span class="price">$750</span>
-		   						<h2>Señúelo</h2>
+		   						<h2>Señúelo Cabinet</h2>
 		   						<p>La cinta de láser holográfica brillante refleja toda la luz subsuperficial y da un pez de juego un objetivo incluso en aguas turbias.
 Los ojos de 3-D animados de gran tamaño y la placa de branquias moldeadas aumentan la apariencia realista.
 Realista moviendo la acción.</p>
-			   					<p><a href="bait.html" class="btn btn-primary btn-outline btn-lg">Más Info</a></p>
+			   					<p><a href="bait.html" class="btn btn-primary btn-outline btn-lg">Purchase Now</a></p>
 		   					</div>
 		   				</div>
 		   			</div>
@@ -177,158 +165,98 @@ Realista moviendo la acción.</p>
 			</div>
 			
             <div class="row">
-    <div class="col-md-4 text-center">
-      <img src="Resources/images/hat01.jpg" width="300px" height="300px">
+    <div class="col-xs-4 col-md-4 text-center">
+      <img src="Resources/images/hat01.jpg" width="150px" height="150px">
       <br>
       Gorra Clasica - <strong>$50</strong>
       <br>
-      <button class="btn btn-primary btn-outline btn-lg my-cart-btn my-cart-btn" data-id="1" data-name="Gorra Clasica" data-summary="summary 1" data-price="50" data-quantity="1" data-image="Resources/images/hat01.jpg" >Añadir</button>
-      <a href="hat.html" class="btn btn-primary btn-outline btn-lg my-cart-btn">Detalles</a>
+      <button  class="btn my-cart-btn" data-id="1" data-name="Gorra Clasica" data-summary="summary 1" data-price="50" data-quantity="1" data-image="Resources/images/hat01.jpg">Add to Cart</button>
+      <a href="#" class="btn btn-info">Details</a>
     </div>
 
-    <div class="col-md-4 text-center">
-      <img src="Resources/images/bag01.jpg"width="300px" height="300px">
+    <div class="col-xs-4 col-md-4 text-center">
+      <img src="Resources/images/bag01.jpg" width="150px" height="150px">
       <br>
       Bolsa de equipaje de pesca - <strong>$50</strong>
       <br>
-      <button class="btn btn-primary btn-outline btn-lg my-cart-btn" data-id="2" data-name="Bolsa de equipaje de pesca" data-summary="summary 1" data-price="50" data-quantity="1" data-image="Resources/images/bag01.jpg">Añadir</button>
-<a href="backpack.html" class="btn btn-primary btn-outline btn-lg my-cart-btn 	">Detalles</a>
+      <button class="btn  my-cart-btn" data-id="2" data-name="Bolsa de equipaje de pesca" data-summary="summary 1" data-price="50" data-quantity="1" data-image="Resources/images/bag01.jpg">Add to Cart</button>
+      <a href="#" class="btn btn-info">Details</a>
     </div>
 
-    <div class="col-md-4 text-center">
-      <img src="Resources/images/carrete.jpg" width="300px" height="300px">
+    <div class="col-xs-4 col-md-4 text-center">
+      <img src="Resources/images/carrete.jpg" width="150px" height="150px">
       <br>
       Carrete - <strong>$500</strong>
       <br>
-      <button class="btn btn-primary btn-outline btn-lg my-cart-btn my-cart-btn" data-id="3" data-name="Carrete" data-summary="summary 1" data-price="500" data-quantity="1" data-image="Resources/images/carrete.jpg">Añadir</button>
-     <a href="reel.html" class="btn btn-primary btn-outline btn-lg my-cart-btn 	">Detalles</a>
+      <button class="btn  my-cart-btn" data-id="3" data-name="Carrete" data-summary="summary 1" data-price="500" data-quantity="1" data-image="Resources/images/carrete.jpg">Add to Cart</button>
+      <a href="#" class="btn btn-info">Details</a>
     </div>
 
-    <div class=" col-md-4 text-center">
-      <img src="Resources/images/gps01.jpg"width="300px" height="300px">
+    <div class="col-xs-4 col-md-4 text-center">
+      <img src="Resources/images/gps01.jpg" width="150px" height="150px">
       <br>
-      GPS - <strong>$22</strong>
+      GPS - <strong>$2000</strong>
       <br>
-      <button class="btn btn-primary btn-outline btn-lg my-cart-btn my-cart-btn" data-id="4" data-name="GPS" data-summary="summary 1" data-price="22" data-quantity="1" data-image="Resources/images/gps01.jpg">Añadir</button>
-    <a href="gps.html" class="btn btn-primary btn-outline btn-lg my-cart-btn 	">Detalles</a>
+      <button class="btn my-cart-btn" style="color;white" data-id="4" data-name="GPS" data-summary="summary 1" data-price="2000" data-quantity="1" data-image="Resources/images/gps01.jpg">Add to Cart</button>
+      <a href="#" class="btn btn-info">Details</a>
     </div>
 
-    <div class="col-md-4 text-center">
-      <img src="Resources/images/fishing_vest.jpg" width="300px" height="300px">
+    <div class="col-xs-4 col-md-4 text-center">
+      <img src="Resources/images/fishing_vest.jpg" width="150px" height="150px">
       <br>
       Chaleco de pesca - <strong>$65</strong>
       <br>
-      <button class="btn btn-primary btn-outline btn-lg my-cart-btn my-cart-btn" data-id="5" data-name="Chaleco de pesca" data-summary="summary 1" data-price="65" data-quantity="1" data-image="Resources/images/fishing_vest.jpg">Añadir</button>
-    <a href="vest.html" class="btn btn-primary btn-outline btn-lg my-cart-btn 	">Detalles</a>
+      <button class="btn  my-cart-btn" data-id="5" data-name="Chaleco de pesca" data-summary="summary 1" data-price="65" data-quantity="1" data-image="Resources/images/fishing_vest.jpg">Add to Cart</button>
+      <a href="#" class="btn btn-info">Details</a>
     </div>
                 
-    <div class="col-md-4 text-center">
-      <img src="Resources/images/menu_rod.jpg" width="300px" height="300px">
+    <div class="col-xs-4 col-md-4 text-center">
+      <img src="Resources/images/person3.jpg" width="150px" height="150px">
       <br>
       Caña de pesca - <strong>$89.99</strong>
       <br>
-      <button class="btn btn-primary btn-outline btn-lg my-cart-btn my-cart-btn" data-id="6" data-name="Caña de pesca" data-summary="summary 1" data-price="89.99" data-quantity="1" data-image="Resources/images/person3.jpg">Añadir</button>
-   <a href="rods.html" class="btn btn-primary btn-outline btn-lg my-cart-btn 	">Detalles</a>
+      <button class="btn  my-cart-btn" data-id="6" data-name="Caña de pesca" data-summary="summary 1" data-price="450" data-quantity="1" data-image="Resources/images/person3.jpg">Add to Cart</button>
+      <a href="#" class="btn btn-info">Details</a>
     </div>
                 
-    <div class="col-md-4 text-center">
-      <img src="Resources/images/hook01.jpg" width="300px" height="300px">
+    <div class="col-xs-4 col-md-4 text-center">
+      <img src="Resources/images/hook01.jpg" width="150px" height="150px">
       <br>
       Gancho de pesca - <strong>$9</strong>
       <br>
-      <button class="btn btn-primary btn-outline btn-lg my-cart-btn my-cart-btn" data-id="7" data-name="Gancho de pesca" data-summary="summary 1" data-price="9" data-quantity="1" data-image="Resources/images/hook01.jpg">Añadir</button>
-    <a href="hooks.html" class="btn btn-primary btn-outline btn-lg my-cart-btn 	">Detalles</a>
+      <button class="btn my-cart-btn" data-id="7" data-name="Gancho de pesca" data-summary="summary 1" data-price="9" data-quantity="1" data-image="Resources/images/hook01.jpg">Add to Cart</button>
+      <a href="#" class="btn btn-info">Details</a>
     </div>
                 
-    <div class="col-md-4 text-center">
-      <img src="Resources/images/bait01.jpg" width="300px" height="300px">
+    <div class="col-xs-4 col-md-4 text-center">
+      <img src="Resources/images/bait01.jpg" width="150px" height="150px">
       <br>
-      Señuelos por unidad - <strong>$1.5</strong>
+      Señuelos por unidad - <strong>$1</strong>
       <br>
-      <button class="btn btn-primary btn-outline btn-lg my-cart-btn my-cart-btn" data-id="8" data-name="Señuelos por unidad" data-summary="summary 1" data-price="1.5" data-quantity="1" data-image="Resources/images/bait01.jpg">Añadir</button>
-    <a href="bait.html" class="btn btn-primary btn-outline btn-lg my-cart-btn 	">Detalles</a>
+      <button class="btn my-cart-btn" data-id="8" data-name="Señuelos por unidad" data-summary="summary 1" data-price="1" data-quantity="1" data-image="Resources/images/bait01.jpg">Add to Cart</button>
+      <a href="#" class="btn btn-info">Details</a>
     </div>
                 
-    <div class=" col-md-4 text-center">
-      <img src="Resources/images/weight01.jpg" width="300px" height="300px">
+    <div class="col-xs-4 col-md-4 text-center">
+      <img src="Resources/images/weight01.jpg" width="150px" height="150px">
       <br>
-      Paquete plomadas - <strong>$2.26</strong>
+      Paquete plomadas - <strong>$2</strong>
       <br>
-      <button class="btn btn-primary btn-outline btn-lg my-cart-btn my-cart-btn" data-id="9" data-name="Paquete plomadas" data-summary="summary 1" data-price="2.26" data-quantity="1" data-image="Resources/images/weight01.jpg">Añadir</button>
-    <a href="weight.html" class="btn btn-primary btn-outline btn-lg my-cart-btn 	">Detalles</a>
+      <button class="btn my-cart-btn" data-id="9" data-name="Paquete plomadas" data-summary="summary 1" data-price="2" data-quantity="1" data-image="Resources/images/weight01.jpg">Add to Cart</button>
+      <a href="#" class="btn btn-info">Details</a>
     </div>
                 
   </div>
-<!--
 
-7- Señuelos
-8- Plomadas
-9- Navegador GPS buscador de peces
-
--->
-
-  <script src="Resources/js/jquery-2.2.3.min.js"></script>
-  <script type='text/javascript' src="Resources/js/bootstrap.min.js"></script>
-  
-  <script type="text/javascript">
-  $(function () {
-
-    var goToCartIcon = function($addTocartBtn){
-      var $cartIcon = $(".my-cart-icon");
-      var $image = $('<img width="30px" height="30px" src="' + $addTocartBtn.data("image") + '"/>').css({"position": "fixed", "z-index": "999"});
-      $addTocartBtn.prepend($image);
-      var position = $cartIcon.position();
-      $image.animate({
-        top: position.top,
-        left: position.left
-      }, 500 , "linear", function() {
-        $image.remove();
-      });
-    }
-
-    $('.my-cart-btn').myCart({
-      currencySymbol: '$',
-      classCartIcon: 'my-cart-icon',
-      classCartBadge: 'my-cart-badge',
-      classProductQuantity: 'my-product-quantity',
-      classProductRemove: 'my-product-remove',
-      classCheckoutCart: 'my-cart-checkout',
-      affixCartIcon: true,
-      showCheckoutModal: true,
-      cartItems: [
-        
-      ],
-      clickOnAddToCart: function($addTocart){
-        goToCartIcon($addTocart);
-      },
-      afterAddOnCart: function(products, totalPrice, totalQuantity) {
-        console.log("afterAddOnCart", products, totalPrice, totalQuantity);
-      },
-      clickOnCartIcon: function($cartIcon, products, totalPrice, totalQuantity) {
-        console.log("cart icon clicked", $cartIcon, products, totalPrice, totalQuantity);
-      },
-      checkoutCart: function(products, totalPrice, totalQuantity) {
-        var checkoutString = "Total Price: " + totalPrice + "\nTotal Quantity: " + totalQuantity;
-        checkoutString += "\n\n id \t name \t summary \t price \t quantity \t image path";
-        $.each(products, function(){
-          checkoutString += ("\n " + this.id + " \t " + this.name + " \t " + this.summary + " \t " + this.price + " \t " + this.quantity + " \t " + this.image);
-        });
-        alert(checkoutString)
-        console.log("checking out", products, totalPrice, totalQuantity);
-      },
-      getDiscountPrice: function(products, totalPrice, totalQuantity) {
-        console.log("calculating discount", products, totalPrice, totalQuantity);
-        return totalPrice * 0.5;
-      }
-    });
-
-  });
-  </script>
 		</div>
 	</div>
 	<!-- TERMINA LOS PRODUCTOS -->
 
-
+<!-- scripts carrito-->
+  <script src="Resources/js/jquery-2.2.3.min.js"></script>
+  <script type='text/javascript' src="Resources/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="Resources/js/carrito.js"></script>
+            <!-- terminan scripts carrito-->
 
 
 
@@ -378,6 +306,8 @@ Realista moviendo la acción.</p>
 	<script src="Resources/js/jquery.flexslider-min.js"></script>
 	<!-- Main -->
 	<script src="Resources/js/main.js"></script>
+    <!-- ultimo script del carrito que tiene que ser cargado al final-->
     <script type='text/javascript' src="Resources/js/jquery.mycart.js"></script>
+    <!-- termina script-->
 	</body>
 </html>

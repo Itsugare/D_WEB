@@ -5,7 +5,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Caña de pesca</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+ <!-- agregacion de compra de carrito-->
+    <link rel="stylesheet" href="Resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Resources/css/cart.css">
 
+        <!-- termina -->
   	<!-- Facebook and Twitter integration -->
 	<meta property="og:title" content=""/>
 	<meta property="og:image" content=""/>
@@ -44,6 +48,7 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
+       
 	</head>
 	<body>
 
@@ -54,40 +59,37 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-3 col-xs-2">
-					<div id="fh5co-logo"><a href="index.html">Grupo2</a></div>
+					<div id="fh5co-logo"><a href="index.html">Grupo 2</a></div>
 				</div>
 				<div class="col-md-6 col-xs-6 text-center menu-1">
-				<ul>
-						<li class="has-dropdown">
+					<ul>
+						<li class="has-dropdown active">
 							<a href="product.html">Productos</a>
-													<ul class="dropdown">
+							<ul class="dropdown">
 								<li><a href="hat.html">Gorras</a></li>
 								<li><a href="rods.html">Cañas de pesca</a></li>
 								<li><a href="reel.html">Carretes</a></li>
 								<li><a href="hooks.html">Anzuelos</a></li>
 								<li><a href="vest.html">Chalecos</a></li>
 								<li><a href="backpack.html">Equipaje pesca</a></li>
-								<li><a href="bait.html">Señuelos</a></li>
+								<li><a href="bait.html">Senuelos</a></li>
 								<li><a href="weight.html">Plomadas</a></li>
-								<li><a href="gps.html">GPS</a></li>
+								<li><a href="gps.html">Navegacion GPS</a></li>
 							</ul>
 						</li>
-						
-						<li><a href="about.html">Nosotros</a></li>
+						<li><a href="about.html">Marcas</a></li>
+						<li class="has-dropdown">
+							<a href="about.html">Nosotros</a>
+							<ul class="dropdown">
+								<li><a href="#">Feedback</a></li>
+							</ul>
+						</li>
 						<li><a href="contact.html">Contactenos</a></li>
 					</ul>
 				</div>
 				<div class="col-md-3 col-xs-4 text-right hidden-xs menu-2">
 					<ul>
-						<li class="search">
-							<div class="input-group">
-						      <input type="text" placeholder="Search..">
-						      <span class="input-group-btn">
-						        <button class="btn btn-primary" type="button"><i class="icon-search"></i></button>
-						      </span>
-						    </div>
-						</li>
-						<li class="shopping-cart"><a href="#" class="cart"><span><small>0</small><i class="icon-shopping-cart"></i></span></a></li>
+						<label class="glyphicon glyphicon-shopping-cart my-cart-icon"><label class="badge badge-notify my-cart-badge"></label></label>
 					</ul>
 				</div>
 			</div>
@@ -105,14 +107,28 @@
 						<div class="item">
 							<div class="active text-center">
 								<figure>
-									<img src="Resources/images/rod01.jpg" alt="user">
+									<img src="Resources/images/person3.jpg" alt="user">
 								</figure>
 							</div>
 						</div>
 						<div class="item">
 							<div class="active text-center">
 								<figure>
-									<img src="Resources/images/rod02.jpg" alt="user">
+									<img src="Resources/images/person2.jpg" alt="user">
+								</figure>
+							</div>
+						</div>
+						<div class="item">
+							<div class="active text-center">
+								<figure>
+									<img src="Resources/images/person1.jpg" alt="user">
+								</figure>
+							</div>
+						</div>
+						<div class="item">
+							<div class="active text-center">
+								<figure>
+									<img src="Resources/images/person5.jpg" alt="user">
 								</figure>
 							</div>
 						</div>
@@ -121,7 +137,7 @@
 						<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
 							<h2>Cañas de pesca</h2>
 							<p>
-								<a href="#" class="btn btn-primary btn-outline btn-lg">Agregar al Carrito</a>
+								<button class="btn btn-primary btn-outline btn-lg my-cart-btn" data-id="6" data-name="Caña de pesca" data-summary="summary 1" data-price="450" data-quantity="1" data-image="Resources/images/person3.jpg">Agregar al Carrito</button>
 							</p>
 						</div>
 					</div>
@@ -141,18 +157,18 @@
 
 							<div class="fh5co-tab-content tab-content active" data-tab-content="1">
 								<div class="col-md-10 col-md-offset-1">
-									<span class="price">Precio: $89.9</span>
+									<span class="price">Precio: $450</span>
 									<h2>Cañas de pesca</h2>
-									<p>La fuerza bruta y la ingeniería sólida son las claves para el éxito en la pesca de alta mar, y este tipo de cana está a la altura de la tarea. La barra de 12-25 libras es una de las favoritas de los pescadores de pez vela.</p>
+									<p>Descripcion caña de pescar</p>
 
 									<div class="row">
 										<div class="col-md-6">
-											<h2 class="uppercase">Liviana</h2>
-											<p>Los agarres ligeros de EVA proporcionan un asimiento sólido.</p>
+											<h2 class="uppercase">Keep it simple</h2>
+											<p>Ullam dolorum iure dolore dicta fuga ipsa velit veritatis</p>
 										</div>
 										<div class="col-md-6">
-											<h2 class="uppercase">Calidad</h2>
-											<p>El material esta compuesto por fibra de vidrio sólida,punta blanca de alta visibilidad que es duradera y sensible.</p>
+											<h2 class="uppercase">Less is more</h2>
+											<p>Ullam dolorum iure dolore dicta fuga ipsa velit veritatis</p>
 										</div>
 									</div>
 
@@ -161,25 +177,25 @@
 
 							<div class="fh5co-tab-content tab-content" data-tab-content="2">
 								<div class="col-md-10 col-md-offset-1">
-									<h3>Especificaciones</h3>
+									<h3>Product Specification</h3>
 									<ul>
-										<li>Espacios compuestos de grafito de 1 pieza</li>
-										<li>Guías Fuji de óxido de aluminio de estructura pesada</li>
-										<li>Abertura triangular con envoltura X</li>
-										<li>Apoyo trasero trasero liso</li>
+										<li>Dark underbill to help reduce glare</li>
+										<li>Mesh back, plastic snap back</li>
+										<li>6-panel construction</li>
+										<li>Embroidered logo</li>
 									</ul>
 								</div>
 							</div>
 
 							<div class="fh5co-tab-content tab-content" data-tab-content="3">
 								<div class="col-md-10 col-md-offset-1">
-									<h3>Calificaciones</h3>
+									<h3>Reviews</h3>
 									<div class="feed">
 										<div>
 											<blockquote>
-												<p>Diseño vistoso, cumple todas las funciones</p>
+												<p>One size fits all, great look for on the water or on land.</p>
 											</blockquote>
-											<h3>&mdash; Ricardo Suarez</h3>
+											<h3>&mdash; Louie Knight</h3>
 											<span class="rate">
 												<i class="icon-star2"></i>
 												<i class="icon-star2"></i>
@@ -190,10 +206,13 @@
 										</div>
 										<div>
 											<blockquote>
-												<p>Su precio es elevado</p>
+												<p>Modern design, nice look.</p>
 											</blockquote>
-											<h3>&mdash; Jimmy Wong</h3>
+											<h3>&mdash; Joefrey Gwapo</h3>
 											<span class="rate">
+												<i class="icon-star2"></i>
+												<i class="icon-star2"></i>
+												<i class="icon-star2"></i>
 												<i class="icon-star2"></i>
 												<i class="icon-star2"></i>
 											</span>
@@ -231,7 +250,11 @@
 		</div>
 	</footer>
 	</div>
-
+<!-- scripts carrito-->
+  <script src="Resources/js/jquery-2.2.3.min.js"></script>
+  <script type='text/javascript' src="Resources/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="Resources/js/carrito.js"></script>
+            <!-- terminan scripts carrito-->
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
@@ -252,6 +275,8 @@
 	<script src="Resources/js/jquery.flexslider-min.js"></script>
 	<!-- Main -->
 	<script src="Resources/js/main.js"></script>
-
+<!-- ultimo script del carrito que tiene que ser cargado al final-->
+    <script type='text/javascript' src="Resources/js/jquery.mycart.js"></script>
+    <!-- termina script-->
 	</body>
 </html>

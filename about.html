@@ -5,7 +5,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Acerca de nosotros</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- agregacion de compra de carrito-->
+    <link rel="stylesheet" href="Resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Resources/css/cart.css">
 
+        <!-- termina -->
 
   	<!-- Facebook and Twitter integration -->
 	<meta property="og:title" content=""/>
@@ -55,13 +59,13 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-3 col-xs-2">
-					<div id="fh5co-logo"><a href="index.html">Grupo2</a></div>
+					<div id="fh5co-logo"><a href="index.html">Grupo 2</a></div>
 				</div>
 				<div class="col-md-6 col-xs-6 text-center menu-1">
 					<ul>
 						<li class="has-dropdown">
 							<a href="product.html">Productos</a>
-													<ul class="dropdown">
+							<ul class="dropdown">
 								<li><a href="hat.html">Gorras</a></li>
 								<li><a href="rods.html">Cañas de pesca</a></li>
 								<li><a href="reel.html">Carretes</a></li>
@@ -73,15 +77,14 @@
 								<li><a href="gps.html">GPS</a></li>
 							</ul>
 						</li>
-						
-						<li><a href="about.html">Nosotros</a></li>
+						<li><a href="#">Marcas</a></li>
+						<li ><a href="about.html">Nosotros</a></li>
 						<li><a href="contact.html">Contactenos</a></li>
 					</ul>
 				</div>
 				<div class="col-md-3 col-xs-4 text-right hidden-xs menu-2">
 					<ul>
-						
-						<li class="shopping-cart"><a href="#" class="cart"><span><small>0</small><i class="icon-shopping-cart"></i></span></a></li>
+						<label class="glyphicon glyphicon-shopping-cart my-cart-icon"><label class="badge badge-notify my-cart-badge"></label></label>
 					</ul>
 				</div>
 			</div>
@@ -253,7 +256,11 @@
 		</div>
 	</footer>
 	</div>
-
+<!-- scripts carrito-->
+  <script src="Resources/js/jquery-2.2.3.min.js"></script>
+  <script type='text/javascript' src="Resources/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="Resources/js/carrito.js"></script>
+            <!-- terminan scripts carrito-->
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
@@ -275,6 +282,8 @@
 
 	<!-- Main -->
 	<script src="Resources/js/main.js"></script>
-
+<!-- ultimo script del carrito que tiene que ser cargado al final-->
+    <script type='text/javascript' src="Resources/js/jquery.mycart.js"></script>
+    <!-- termina script-->
 	</body>
 </html>
